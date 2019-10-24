@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
  <style>
+     #wrapper{
+         overflow: scroll;
+         margin: auto;
+         width: 50%;
+     }
         .car-card{
             width: 270px;
             height: 480px;
@@ -41,44 +46,124 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
+     html{
+         scroll-behavior: smooth;
+     }
+     a{
+         text-decoration: none;
+     }
+     #banner1{
+            top: 0px;
+        }
+     .banner{
+            background-color: #EB0A1E;
+            line-height: 40px;
+            padding-left: 20px;
+            color: #ffffff;
+            font-size: 20px;
+            position: sticky;
+            z-index: 1;
+     }
+     #banner2{
+         top: 0px;
+     }
+     #banner3{
+         top: 0px;
+     }
     </style>
     </head>
 
 <body>
-    <div> 
+    <a href="#banner1"></a><div id="wrapper" id="banner1"> 
         <header><h1>Cars</h1></header>
         <div class="car-card">
-    
         <img class="car-img" src="Images/avalon.PNG">
-    <div class="car-name">
-            2020 Avalon
-        </div>
-    <div class="car-info">
-            $35,800 starting <br>22/32 est. MPG
-        </div>
+        <div class="car-name">2020 Avalon</div>
+        <div class="car-info">$35,800 starting <br>22/32 est. MPG</div>
     </div>
         
         <div class="car-card">
-    
         <img class="car-img" src="Images/mirai-side.png">
-    <div class="car-name">
-            2019 Mirai
-        </div>
-    <div class="car-info">
-            $58,500 starting <br>67/67 est. MPGe
-        </div>
+    <div class="car-name">2019 Mirai</div>
+    <div class="car-info">$58,500 starting <br>67/67 est. MPGe</div>
     </div>
    
         <div class="car-card">
-    
         <img class="car-img" src="Images/prius.PNG">
-    <div class="car-name">
-            2020 prius
-        </div>
-    <div class="car-info">
-            $58,500 starting <br>67/67 est. MPGe
-        </div>
+    <div class="car-name">2020 prius</div>
+    <div class="car-info">$58,500 starting <br>67/67 est. MPGe</div>
     </div>
+        
+        <div class="car-card">
+    <img class="car-img" src="Images/sienna.PNG">
+    <div class="car-name">2020 Sienna</div>
+    <div class="car-info">$26,200 starting <br>21/27 est. MPG</div>
+    </div>
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/86.PNG">
+    <div class="car-name">2020 86</div>
+    <div class="car-info">$46,500 starting <br>21/23 est. MPG</div>
+    </div>
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/supra.PNG">
+    <div class="car-name">2020 Supra</div>
+    <div class="car-info">$40,900 starting <br>24/31 est. MPG</div>
+    </div>             
+    </div>
+    
+    <div id="wrapper"><header><h1>SUVS</h1></header>
+    <div class="car-card">
+    <img class="car-img" src="Images/Rav4.PNG">
+    <div class="car-name">2020 Rav 4</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/highlander.PNG">
+    <div class="car-name">2020 Highlander</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>    
+    
+    <div class="car-card">
+    <img class="car-img" src="Images/4Runner.PNG">
+    <div class="car-name">2020 4Runner</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>     
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/sequoia.PNG">
+    <div class="car-name">2020 Sequoia</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>     
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/C-HR.PNG">
+    <div class="car-name">2020 C-HR</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>     
+    
+    <div class="car-card">
+    <img class="car-img" src="Images/landcruiser.PNG">
+    <div class="car-name">2020 Land Cruiser</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>     
+    </div>
+    
+    <div id="wrapper">
+    <header><h1>Trucks</h1></header>
+        <div class="car-card">
+    <img class="car-img" src="Images/tacoma.PNG">
+    <div class="car-name">2020 Tacoma</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div> 
+        
+    <div class="car-card">
+    <img class="car-img" src="Images/tundra.PNG">
+    <div class="car-name">2020 Tundra</div>
+    <div class="car-info">$26,900 starting <br>24/31 est. MPG</div>
+    </div>     
         
     </div>
 </body>
