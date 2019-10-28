@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            background-color: 0;
+            background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+            width: 100%;
+            height: 100vh;
+        }
+        .circles-container{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        li{
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background-color: #ff00e0;
+            bottom: -150px;
+            animation-name: bubble;
+            animation-duration: 25s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bubble{
+            0%{
+                transform: translateY(0)
+                rotate(0deg);
+                opacity: 0.8;
+                border-radius: 0;
+            }
+            100%{
+                transform: translateY(-1000px)
+                    rotate(720deg);
+                opacity: 0;
+                border-radius: 100%;
+            }
+        }
+        .circle1{
+            left: 10%;
+            width: 10px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle2{
+            left: 20%;
+            width: 20px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle3{
+            left: 30%;
+            width: 30px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle4{
+            left: 40%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle5{
+            left: 50%;
+            width: 40px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle6{
+            left: 60%;
+            width: 50px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle7{
+            left: 70%;
+            width: 90px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle8{
+            left: 80%;
+            width: 100px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        .circle9{
+            left: 90%;
+            width: 40px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+    </style>
+    
+    </head>
+
+<body>
+    <div class="main-container">
+        <ul class="circles-container">
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+        </ul>
+    </div>  
+</body>
+</html>
