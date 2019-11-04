@@ -8,7 +8,7 @@
 }
 .name-text{
     font-family: 'Spicy Rice', cursive;
-    height: 50vh;
+    height: 100vh;
     position: relative;
     font-size: 50px;
     color: blue;
@@ -76,10 +76,28 @@ GIMP{
     scroll-behavior: smooth;
 }
 .img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 nav{
     background: 0;
-    position: relative;
+    position: fixed;
+    color: red;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    font-size: 30px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+.row{
+    display: flex;
 }
