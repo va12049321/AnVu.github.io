@@ -24,14 +24,15 @@
             margin-left: 115px;
             font-family: 'Roboto', sans-serif;
             align-items: flex-start;
-            margin-top: -75px;
+            margin-top: -85px;
+            font-size: 25px;
         }
         #down-arrow{
             width: 100%;
             display: flex;
             justify-content: flex-end;
             align-items: flex-start;
-            margin-top: -40px;
+            margin-top: -60px;
         }
         .img{
             width:  15px;
@@ -45,6 +46,36 @@
         }
         img{
             width: 100px;
+        }
+        #tweet-text{
+            max-width: 600px;
+            width: 100%;
+            height: 150px;
+            margin: auto;
+            background-color: white;
+            flex-direction: column;
+            font-size: 40px;
+        }
+        #tweet-pic{
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        #tweet-meta-info{
+            max-width: 600px;
+            width: 100%;  
+            margin: auto;
+            font-size: 25px;
+            border-bottom: 50px;
+            padding: 10px;
+        }
+        #icons{
+            max-width: 600px;
+            width: 100%;  
+            margin: auto;
+            justify-content: space-around;
+            display: flex;
         }
     </style>
     
@@ -61,6 +92,25 @@
             <div id="down-arrow"><img class="img" src="Images/down-arrow.svg"></div>
         </div>
             </div>
+    </div>
+    <div id="tweet-text">
+    <p>Them: Not a sport</p>
+    US:
+    </div>
+    <div id="tweet-pic">
+    <img id="tweet-pic" src="Images/tweet-pic.jpg">
+    </div>
+    <div id="tweet-meta-info">
+    8:41 AM . Nov 3, 2019 . Twitter Web App
+    </div>
+    <div id="tweet-meta-info">
+    <strong>32</strong> Retweets <strong>249</strong> Likes
+    </div>
+    <div id="icons">
+        <img  src="Images/reply.PNG">
+        <img  src="Images/retweet.PNG">
+        <img  src="Images/like.PNG">
+        <img  src="Images/msg.PNG">
     </div>
 </body>
 </html>
