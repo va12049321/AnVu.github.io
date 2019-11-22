@@ -1,0 +1,17 @@
+#pokemon-team{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+}
+#team-container{
+    width: 100%;
+    max-width: 600px;
+    min-height: 544px;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}

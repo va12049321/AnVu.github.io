@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    paddding: 0;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    font-family: 'Roboto';
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#searchInput {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-family: 'roboto';
+    font-size: 15px;
+}
+
+::placeholder{
+    color: white;
+}
+
+#pokemon-search{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+    overflow: auto;
+}
+
+#card-container::-webkit-scrollbar{
+    width: 10px;
+}
+#card-container::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 212px;
+    padding: 20px;
+    width: 120px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.img-container{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.6)
+}
+.img-container img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.number{
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.type{
+    font-size: 10px;
+}
