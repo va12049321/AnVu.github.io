@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #525252;
+    }
+    .board{
+        margin: auto;
+        width: 900px;
+        height: 900px;
+        background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .dark{
+        background: black;
+    }
+    .square{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .l-pawn{
+        background-image: url("Chess-images/l-pawn.svg");
+    }
+    .l-bishop{
+        background-image: url(Chess-images/l-bishop.svg);
+    }
+    .l-king{
+        background-image: url(Chess-images/l-king.svg);
+    }
+    .l-knight{
+        background-image: url(Chess-images/l-knight.svg);
+    }
+    .l-queen{
+        background-image: url(Chess-images/l-queen.svg);
+    }
+    .l-rook{
+        background-image: url(Chess-images/l-rook.svg);
+    }
+    .d-pawn{
+        background-image: url(Chess-images/d-pawn.svg);
+    }
+    .d-bishop{
+        background-image: url(Chess-images/d-bishop.svg);
+    }
+    .d-king{
+        background-image: url(Chess-images/d-king.svg);
+    }
+    .d-knight{
+        background-image: url(Chess-images/d-knight.svg);
+    }
+    .d-queen{
+        background-image: url(Chess-images/d-queen.svg);
+    }
+    .d-rook{
+        background-image: url(Chess-images/d-rook.svg);
+    }
+    
+</style>    
+    
+</head>
+
+<body>
+    <section class="board">
+        <!--row 1 -->
+        <div class="square dark l-rook"></div>
+        <div class="square l-knight"></div>
+        <div class="square dark l-bishop"></div>
+        <div class="square l-king"></div>
+        <div class="square dark l-queen"></div>
+        <div class="square l-bishop"></div>
+        <div class="square dark l-knight"></div>
+        <div class="square l-rook"></div>
+        
+        <!--row 2 -->
+        <div class="square l-pawn"></div>
+        <div class="square dark l-pawn"></div>
+        <div class="square l-pawn"></div>
+        <div class="square dark l-pawn"></div>
+        <div class="square l-pawn"></div>
+        <div class="square dark l-pawn"></div>
+        <div class="square l-pawn"></div>
+        <div class="square dark l-pawn"></div>
+        
+        <!--row 3 -->
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        
+        <!--row 4 -->
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        
+        <!--row 5 -->
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        
+        <!--row 6 -->
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        
+        <!--row 7 -->
+        <div class="square dark d-pawn"></div>
+        <div class="square d-pawn"></div>
+        <div class="square dark d-pawn"></div>
+        <div class="square d-pawn"></div>
+        <div class="square dark d-pawn"></div>
+        <div class="square d-pawn"></div>
+        <div class="square dark d-pawn"></div>
+        <div class="square d-pawn"></div>
+        
+        <!--row 8 -->
+        <div class="square d-rook"></div>
+        <div class="square dark d-knight"></div>
+        <div class="square d-bishop"></div>
+        <div class="square dark d-queen"></div>
+        <div class="square d-king"></div>
+        <div class="square dark d-bishop"></div>
+        <div class="square d-knight"></div>
+        <div class="square dark d-rook"></div>
+        
+    </section>
+</body>
+</html>
