@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #calendar-grid{
+        font-family: 'Lilita One', cursive;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-gap: 1px;
+        grid-template-areas: "m m m m m m d1"
+                             "d2 d3 d4 d5 d6 d7 d8"
+                             "d9 d10 d11 d12 d13 d14 d15"
+                             "d16 d17 d18 d19 d20 d21 d22"
+                             "d23 d24 d25 d26 d27 d28 d29"    
+                             "d30 d31 . . . . .";
+    }
+    .month-name{
+        grid-area: m;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 75px;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: #db7a7a;
+    }
+    .day-box{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: -10;
+    }
+    .day-box span{
+        margin: 15px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .red{
+        background-color: #db7a7a;
+    }
+    .orange{
+        background-color: #db917a;
+    }
+    .yellow{
+        background-color: #dbd47a;
+    }
+    .green{
+        background-color: #bedb7a;
+    }
+    .blue{
+        background-color: #7adbb8;
+    }
+    .dark-blue{
+        background-color: #7ab6db;
+    }
+    /*Hanukkah Styles*/
+    .hanukkah{
+        position: relative;
+        z-index: 10;
+        grid-area: d22;
+    }
+    .hanukkah div{
+        margin: 60px 0px 0px 30px;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    .hanukkah2{
+        position: relative;
+        z-index: 10;
+        grid-column: 1/8;
+        grid-row: 5;
+    }
+    .hanukkah2 div{
+        margin: 60px 0px 0px 0px;
+        padding: 10px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    .hanukkag3{
+        position: relative;
+        z-index: 10;
+        grid-column: 1/3;
+        grid-row: 6;
+    }
+    .hanukkah3 div{
+        margin: 60px 30px 0px 0px;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    .kwanzaa{
+        position: relative;
+        z-index: 10;
+        grid-column: 4/8;
+        grid-row: 5;
+    }
+    .kwanzaa div{
+        margin: 110px 0 0 30px;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    ..kwanzaa2{
+        position: relative;
+        z-index: 10;
+        grid-column: 1/3;
+        grid-row: 6;
+    }
+    .kwanzaa2 div{
+        margin: 110px 30px 0 0;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    .christmas{
+        position: relative;
+        z-index: 10;
+        grid-column: 3/4;
+        grid-row: 5;
+    }
+    .christmas div{
+        margin: 160px 0 0 0;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgba(255,255,255,.4);
+        text-align: center;
+    }
+    </style>    
+    
+</head>
+
+<body>
+    <section id="calendar-grid">
+    <!--First Row-->    
+        <div class="month-name">DECEMBER</div>
+        <div class="day-box red" style="grid-template-areas: d1;"><span>1</span><span>SUN</span></div>
+    <!--2nd Row-->
+        <div class="day-box orange" style="grid-template-area: d2;"><span>2</span><span>mon</span></div>
+        <div class="day-box orange" style="grid-template-area: d3;"><span>3</span><span>tue</span></div>
+        <div class="day-box orange" style="grid-template-area: d4;"><span>4</span><span>wed</span></div>
+        <div class="day-box orange" style="grid-template-area: d5;"><span>5</span><span>thu</span></div>
+        <div class="day-box orange" style="grid-template-area: d6;"><span>6</span><span>fri</span></div>
+        <div class="day-box orange" style="grid-template-area: d7;"><span>7</span><span>sat</span></div>
+        <div class="day-box orange" style="grid-template-area: d8;"><span>8</span><span>SUN</span></div>
+    <!--3rd Row-->
+        <div class="day-box yellow" style="grid-template-area: d9;"><span>9</span><span>mon</span></div>
+        <div class="day-box yellow" style="grid-template-area: d10;"><span>10</span><span>tue</span></div>
+        <div class="day-box yellow" style="grid-template-area: d11;"><span>11</span><span>wed</span></div>
+        <div class="day-box yellow" style="grid-template-area: d12;"><span>12</span><span>thu</span></div>
+        <div class="day-box yellow" style="grid-template-area: d13;"><span>13</span><span>fri</span></div>
+        <div class="day-box yellow" style="grid-template-area: d14;"><span>14</span><span>sat</span></div>
+        <div class="day-box yellow" style="grid-template-area: d15;"><span>15</span><span>SUN</span></div>
+    <!--4th Row-->
+        <div class="day-box green" style="grid-template-area: d16;"><span>16</span><span>mon</span></div>
+        <div class="day-box green" style="grid-template-area: d17;"><span>17</span><span>tue</span></div>
+        <div class="day-box green" style="grid-template-area: d18;"><span>18</span><span>wed</span></div>
+        <div class="day-box green" style="grid-template-area: d19;"><span>19</span><span>thu</span></div>
+        <div class="day-box green" style="grid-template-area: d20;"><span>20</span><span>fri</span></div>
+        <div class="day-box green" style="grid-template-area: d21;"><span>21</span><span>say</span></div>
+        <div class="day-box green" style="grid-template-area: d22;"><span>22</span><div class="hanukkah"><div>Hanukkah</div></div><span>SUN</span></div>
+    <!--5th Row-->
+        <div class="day-box blue" style="grid-template-area: d23;"><span>23</span><span>mon</span></div>
+        <div class="day-box blue" style="grid-template-area: d24;"><span>24</span><span>tue</span></div>
+        <div class="day-box blue" style="grid-template-area: d25;"><span>25</span><div class="christmas"><div>Christmas</div></div><span>wed</span></div>
+        <div class="day-box blue" style="grid-template-area: d26;"><span>26</span><div class="hanukkah2"><div>Hanukkah</div></div><span>thu</span></div>
+        <div class="day-box blue" style="grid-template-area: d27;"><span>27</span><span>fri</span></div>
+        <div class="day-box blue" style="grid-template-area: d28;"><span>28</span><div class="kwanzaa"><div>Kwanzaa</div></div><span>sat</span></div>
+        <div class="day-box blue" style="grid-template-area: d29;"><span>29</span><span>SUN</span></div>
+    <!--6th Row-->
+        <div class="day-box dark-blue" style="grid-template-area: d30"><span>30</span><div class="hanukkah3"><div>Hanukkah</div></div><span>mon</span></div>
+        <div class="day-box dark-blue" style="grid-template-area: d31"><span>31</span><div class="kwanzaa2"><div>Kwanzaa</div></div><span>tue</span></div>
+    <!--Holidays-->
+        
+        
+        
+        
+        
+        
+    </section>
+</body>
+</html>
